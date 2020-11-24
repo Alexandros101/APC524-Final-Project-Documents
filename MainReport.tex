@@ -57,7 +57,7 @@
 \includegraphics[scale=0.2]{pton (1).png}
 \end{figure}
 \vspace{30mm}
-\Large{Isabel Moreira de Oliveira, Hui Yuan, Thuy Vy Luu, Alexandros Papamatthaiou, Rafael Pastrana}\\
+\Large{Isabel Moreira de Oliveira, Hui Yuan, Alexandros Papamatthaiou, Rafael Pastrana}\\
 
 \vspace{8mm}
 \large{Final Project  \\ APC524: Software Engineering for Scientific Computing \\ }
@@ -235,6 +235,22 @@ We have \textbf{one month} to achieve alpha status, and about \textbf{two weeks}
     \item 24 Nov - Alpha version (End of Week 4)
     \item 08 Dec - Final submission (End of Week 6)
 \end{itemize}
+
+\section{Alpha Version}
+
+The alpha version has the following features:
+
+\begin{enumerate}
+    \item Writing and editing the API
+    \item An abstract base class clustering algorithm, with multiple algorithm objects that conform to a single API.
+    \item Original k-means algorithm refactored to comply with API set by ClusteringAlgorithm
+    \item Factory class that instantiates clustering methods on the fly. Only methods that inherit from the abstract base class are considered.
+    \item Setting a repository for the final report
+    \item Creating a VectorField class that conforms to our API
+    \item Implementing a BisectorField generator class
+    \item Wrapping an existing FEA library (in progress not in alpha) and creating a StructuralModel() that takes in loads, support conditions and a Mesh() and returns a sequence of valid user-defined VectorField() objects.
+    \item Refactoring align$_$vectors() and smoothen$_$vectors() into their own functions into their own submodule that can be accessed as directional$_$clustering.transformations. 
+\end{enumerate}
 
 \section{Future Work}
 
